@@ -1,0 +1,10 @@
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\bin\Debug\JuegoVida.exe.config
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\bin\Debug\JuegoVida.exe
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\bin\Debug\JuegoVida.pdb
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.Form1.resources
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.Properties.Resources.resources
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.csproj.GenerateResource.Cache
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.csproj.CoreCompileInputs.cache
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.exe
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.pdb
+C:\Users\Sergio\source\repos\JuegoVida\JuegoVida\obj\Debug\JuegoVida.csprojResolveAssemblyReference.cache
