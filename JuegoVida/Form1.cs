@@ -71,7 +71,14 @@ namespace JuegoVida
                     if (actual[xMayor, yMayor] == true) vivas++;
 
                     if (actual[x, y] == false && vivas == 3) siguiente[x, y] = true;
-                    else if (!(actual[x, y] == true && (vivas == 2 || vivas == 3))) siguiente[x, y] = false;
+                    if (actual[x, y] == true && (vivas == 2 || vivas == 3))
+                    {
+                        siguiente[x, y] = true;
+                    }
+                    else
+                    {
+                        siguiente[x, y] = false;
+                    }
                 }
             }
             return siguiente;
@@ -80,15 +87,21 @@ namespace JuegoVida
         private void bSeguir_click(object sender, EventArgs e)
         {
             bool[,] siguiente = generacion(actual);
-            panel1 = new Panel();
-            panel1.BackColor = Color.Aquamarine;
             Graphics grafico = panel1.CreateGraphics();
             Brush color = Brushes.Magenta;
+            Brush azul = Brushes.Aquamarine;
             for (int i = 0; i < 100; i++)
             {
                 for (int j = 0; j < 100; j++)
                 {
-                    if (siguiente[i, j] == true) grafico.FillRectangle(color, i * 5, j * 5, 5, 5);
+                    if (siguiente[i, j] == true)
+                    {
+                        grafico.FillRectangle(color, i * 5, j * 5, 5, 5);
+                    }
+                    else
+                    {
+                        grafico.FillRectangle(azul, i * 5, j * 5, 5, 5);
+                    }
                 }
             }
             actual = siguiente;
