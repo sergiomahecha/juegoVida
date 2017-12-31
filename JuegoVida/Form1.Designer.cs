@@ -104,7 +104,7 @@
             this.bSeguir.TabIndex = 1;
             this.bSeguir.Text = "Seguir";
             this.bSeguir.UseVisualStyleBackColor = true;
-            this.bSeguir.Click += new System.EventHandler(this.button1_Click);
+            this.bSeguir.Click += new System.EventHandler(this.bSeguir_click);
             // 
             // maskedTextBox1
             // 

@@ -40,25 +40,6 @@ namespace JuegoVida
                     actual[x, y] = true;
                 }
 
-                //int n = 0;
-                //while (n!=100)
-                //{
-                    bool[,] siguiente = generacion(actual);
-                    panel1=new Panel();
-                    panel1.BackColor = Color.Aquamarine;
-                    //grafico = panel1.CreateGraphics();
-                    //color = Brushes.Magenta;
-                    for (int i = 0; i < 100; i++)
-                    {
-                        for (int j = 0; j < 100; j++)
-                        {
-                            if (siguiente[i, j] == true) grafico.FillRectangle(color, i * 5, j * 5, 5, 5);
-                        }
-                    }
-                    actual = siguiente;
-                //    n++;
-                //    Thread.Sleep(2000);
-                //}
             }
             else
             {
@@ -96,10 +77,21 @@ namespace JuegoVida
             return siguiente;
         }
 
-        private void bSeguir_Click(object sender, EventArgs e)
+        private void bSeguir_click(object sender, EventArgs e)
         {
-            MessageBox.Show("hola");
+            bool[,] siguiente = generacion(actual);
+            panel1 = new Panel();
+            panel1.BackColor = Color.Aquamarine;
+            Graphics grafico = panel1.CreateGraphics();
+            Brush color = Brushes.Magenta;
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    if (siguiente[i, j] == true) grafico.FillRectangle(color, i * 5, j * 5, 5, 5);
+                }
+            }
+            actual = siguiente;
         }
-
     }
 }
