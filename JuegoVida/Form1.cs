@@ -71,7 +71,7 @@ namespace JuegoVida
                     if (actual[xMayor, yMayor] == true) vivas++;
 
                     if (actual[x, y] == false && vivas == 3) siguiente[x, y] = true;
-                    if (actual[x, y] == true && (vivas == 2 || vivas == 3))
+                    if ((actual[x, y] == true && vivas == 2) || (actual[x, y] == true && vivas == 3))
                     {
                         siguiente[x, y] = true;
                     }
@@ -98,7 +98,7 @@ namespace JuegoVida
                     {
                         grafico.FillRectangle(color, i * 5, j * 5, 5, 5);
                     }
-                    else
+                    else if(siguiente[i, j] == false)
                     {
                         grafico.FillRectangle(azul, i * 5, j * 5, 5, 5);
                     }
